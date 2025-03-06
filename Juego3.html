@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fbe7c6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #message {
+            display: none;
+            font-size: 1.5em;
+            color: #333;
+            padding: 20px;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            background-color: #fff;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ff4040;
+        }
+
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Un mensaje muy especial para ti mi amor❤️✨</h1>
+
+    <button onclick="showMessage()">click</button>
+
+    <div id="message">
+        <p>Siempre has sido una persona increíble y especial, y hoy quiero recordarte lo valiosa que eres para mí. No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Tu luz, tu esencia, tu forma de ser hacen que cada momento a tu lado sea único y maravilloso.
+
+            Gracias por ser tú, por llenar mis días de alegría, por regalarme tu amor y tu presencia. Eres mi mayor tesoro y la razón por la que sonrío cada día.</p>
+        <p>MI NIÑA💖</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("message");
+            message.style.display = "block";
+            setTimeout(function() {
+                message.classList.add("fade-in");
+            }, 100);
+        }
+    </script>
+    <audio controls autoplay loop>
+        <source src="RÃ_o_Roma_-_TÃº_me_cambiaste_la_vida_(Letra)_[_YouConvert.net_].mp3"></audio>
+</body>
+</html>
